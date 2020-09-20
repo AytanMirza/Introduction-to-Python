@@ -1,4 +1,4 @@
-#3. Take as input a real number and print “True” if it’s in fact an integer, otherwise “False”.
+# Take as input a real number and print “True” if it’s in fact an integer, otherwise “False”.
 
 a = float(input())
 print(a == int(a))
