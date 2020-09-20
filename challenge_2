@@ -1,0 +1,6 @@
+#2. Take the following variables as real number inputs: A square’s side length; A circle’s radius
+# Print “True” if the circle’s circumference is larger than the square’s, otherwise “False”.
+
+square = int(input("Enter square length: "))
+circle_radius = int(input("Enter circle radius: "))
+print(2*3.14*circle_radius > 4 * square)
