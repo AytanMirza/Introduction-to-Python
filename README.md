@@ -1,3 +1,2 @@
-Basic Challenges
-Python Programming
+Python Programming - Basic challenges
 
