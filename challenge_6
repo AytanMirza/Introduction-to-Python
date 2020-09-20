@@ -1,0 +1,12 @@
+# Take as input two integers, and print: Their sum; Their difference; The product; The result of
+# dividing the first by the second; The remainder when dividing the first by the second;“True” if
+# the first number is bigger than or equal to the second otherwise “False”
+
+a = int(input("Enter number a: "))
+b = int(input("Enter number b: "))
+print(a + b)
+print(a - b)
+print(a * b)
+print(a // b)
+print(a % b)
+print(a >= b)
