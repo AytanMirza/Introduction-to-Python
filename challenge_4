@@ -1,0 +1,4 @@
+#Take as input an integer number and print “True” if it’s an even number between 100 and 999, otherwise “False”.
+
+a = int(input())
+print(100 < a < 999 and a % 2 == 0)
