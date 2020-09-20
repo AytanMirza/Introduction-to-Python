@@ -1,2 +1,0 @@
-# code
-Python programming codes
