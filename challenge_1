@@ -1,0 +1,8 @@
+#Take as input a person’s name and monthly salary in dollars, and print their yearly salary in
+# thousands of dollars.For example: “Michael”, “5000”  “Michelle’s yearly salary is $5000K”.
+
+def remove(string):
+    return string.replace(" ", "")
+name = input("Name: ")
+salary = int(input("salary: "))
+print(name + "'s", "yearly salary is", "${:,.0f}".format(round(((salary*12)/1000))), end=""'K')
