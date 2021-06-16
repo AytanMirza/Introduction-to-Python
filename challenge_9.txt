@@ -1,0 +1,13 @@
+# Write a function that takes one parameter, a list, and calculates the z-score of eachvalue in the list.
+
+def mean(x):
+    return sum(x) / len(x)
+
+def std(x):
+    mean_x = mean(x)
+    return (mean([(v - mean_x) ** 2 for v in x])) ** .5
+
+def z_score(x):
+    return [(y - mean(x)) / std(x) for y in x]
+
+print (z_score([1,2,3,4,5,6]))
