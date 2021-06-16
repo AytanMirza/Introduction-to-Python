@@ -1,0 +1,22 @@
+# Professor Gruble’s class just had an exam. Write a program that takes as input thegrade of each student and whether or not they passed the exam. 
+# The program thenneeds to print two things:
+# a.Whether or not Professor Gruble was consistent in passing the students.
+# b.If Professor Gruble was consistent, print the range in which lies the threshold forpassing the exam.
+
+students_number = int(input('How many students are there? '))
+passed = []
+failed = []
+
+for i in range(students_number):
+    grade = int(input('Enter student grade: '))
+    result = input('Enter the result: ')
+    if result == 'p':
+        passed.append(grade)
+    elif result == 'f':
+        failed.append(grade)
+
+if max(failed) >= min(passed):
+    print('Professor Gruble was inconsistent')
+else:
+    print('Professor Gruble was consistent')
+    print(range(max(failed) + 1, min(passed)))
