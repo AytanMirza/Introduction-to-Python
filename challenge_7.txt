@@ -1,0 +1,23 @@
+#Here are the names and favorite colors of five friends:
+#●Sophie: blue, yellow, brown, orange, red
+#●Iris: green, pink, blue, orange, red
+#●Ian: blue, brown, green, orange, yellow
+#●Grace: red, purple, green, brown, yellow
+#●Edgar: purple, pink, green, yellow, orange
+#When they hang out together, they have to pick a place where the dominant color is inall of the favorite color lists of the participating friends.
+#Help them plan meetings by writing a program that takes as input whether each friendwill participate in the meeting, and prints as output the possible dominant colors.
+#(Note: the meetings usually don’t include all members at the same time).
+
+d = {
+    'Sophie': ('blue', 'yellow', 'brown', 'orange', 'red'),
+    'Iris': ('green', 'pink', 'blue', 'orange', 'red'),
+    'Ian': ('blue', 'brown', 'green', 'orange', 'yellow'),
+    'Grace': ('red', 'purple', 'green', 'brown', 'yellow'),
+    'Edgar': ('purple', 'pink', 'green', 'yellow', 'orange')
+}
+names = input("Enter friends name: ").split(",")
+main_set = set(d[names[0]])
+
+for p in names[1:]:
+    main_set = main_set.intersection(set(d[p]))
+print(main_set)
